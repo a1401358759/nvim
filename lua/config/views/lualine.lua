@@ -1,14 +1,12 @@
 -- https://github.com/nvim-lualine/lualine.nvim
 
+local public = require("utils.public")
+local icons = public.get_icons("platform", true)
+
 local M = {
     requires = {
         "lualine",
         "swenv.api",
-    },
-    platform_icons = {
-        unix = " ",
-        dos = " ",
-        mac = " ",
     },
     pyversion = vim.fn.system("python --version"):match("%d.*%d"),
 }
@@ -53,7 +51,7 @@ function M.load()
             lualine_a = {
                 {
                     "fileformat",
-                    symbols = M.platform_icons,
+                    symbols = icons,
                 },
                 { "mode" },
             },

@@ -13,16 +13,23 @@ function M.before()
 end
 
 function M.load()
+    local trouble = require("trouble.providers.telescope")
     M.telescope.setup({
         defaults = {
-            prompt_prefix = " ",
-            selection_caret = " ",
+            mappings = {
+                i = { ["<c-t>"] = trouble.open_with_trouble },
+                n = { ["<c-t>"] = trouble.open_with_trouble },
+            },
+            prompt_prefix = " ",
+            selection_caret = " ",
+            initial_mode = "insert",
+            selection_strategy = "reset",
+            sorting_strategy = "descending",
+            layout_strategy = "horizontal", -- bottom_pane
+            color_devicons = true,
             entry_prefix = " ",
             multi_icon = " ",
-            color_devicons = true,
             file_ignore_patterns = { "node_modules" },
-            -- theme
-            layout_strategy = "bottom_pane",
             -- config
             layout_config = {
                 bottom_pane = {
