@@ -4,6 +4,8 @@ setting.g = {
     mapleader = " ",
 }
 
+vim.g.navic_silence = true
+
 setting.opt = {
     ruler = false,
     showmode = false,
@@ -22,7 +24,7 @@ setting.opt = {
     scrolloff = 21,
     mouse = "a",
     list = true,
-    spell = true,
+    spell = false,
     spelllang = "en_us,cjk",
     ignorecase = true,
     smartcase = true,
@@ -38,6 +40,7 @@ setting.opt = {
     fillchars = "eob: ",
     fileencodings = "ucs-bom,utf-8,gbk,big5,gb18030,latin1",
     sessionoptions = "buffers,curdir,folds,help,tabpages,winsize,globals",
+    cmdheight = 0,
 }
 
 -- vim.opt.listchars:append("space:⋅")

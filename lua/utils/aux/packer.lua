@@ -48,6 +48,7 @@ function aux_packer.entry(plugins)
     packer.init({
         git = {
             default_url_format = options.download_source .. "%s",
+            clone_timeout = 600, -- Timeout, in seconds, for git clones
         },
         display = {
             working_sym = "",

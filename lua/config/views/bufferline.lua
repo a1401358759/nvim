@@ -20,7 +20,7 @@ function M.load()
             themable = true,
             show_close_icon = true,
             -- ordinal
-            numbers = "none",
+            numbers = "ordinal",
             buffer_close_icon = "",
             modified_icon = "●",
             close_icon = "",
@@ -30,21 +30,21 @@ function M.load()
             separator_style = "thin",
             indicator = { icon = "▎", style = "icon" },
             ---@diagnostic disable-next-line: unused-local
-            diagnostics_indicator = function(count, level, diagnostics_dict, context)
-                local message
-                if diagnostics_dict.error then
-                    message = string.format("%s%s", icons.Error, diagnostics_dict.error)
-                elseif diagnostics_dict.warning then
-                    message = string.format("%s%s", icons.Warn, diagnostics_dict.warning)
-                elseif diagnostics_dict.info then
-                    message = string.format("%s%s", icons.Info, diagnostics_dict.info)
-                elseif diagnostics_dict.hint then
-                    message = string.format("%s%s", icons.Hint, diagnostics_dict.hint)
-                else
-                    message = ""
-                end
-                return message
-            end,
+            -- diagnostics_indicator = function(count, level, diagnostics_dict, context)
+            --     local message
+            --     if diagnostics_dict.error then
+            --         message = string.format("%s%s", icons.Error, diagnostics_dict.error)
+            --     elseif diagnostics_dict.warning then
+            --         message = string.format("%s%s", icons.Warn, diagnostics_dict.warning)
+            --     elseif diagnostics_dict.info then
+            --         message = string.format("%s%s", icons.Info, diagnostics_dict.info)
+            --     elseif diagnostics_dict.hint then
+            --         message = string.format("%s%s", icons.Hint, diagnostics_dict.hint)
+            --     else
+            --         message = ""
+            --     end
+            --     return message
+            -- end,
             -- custom_areas = {
             --     right = function()
             --         return {

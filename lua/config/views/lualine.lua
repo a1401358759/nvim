@@ -5,6 +5,11 @@ local M = {
         "lualine",
         "swenv.api",
     },
+    platform_icons = {
+        unix = " ",
+        dos = " ",
+        mac = " ",
+    },
     pyversion = vim.fn.system("python --version"):match("%d.*%d"),
 }
 
@@ -46,6 +51,10 @@ function M.load()
         },
         sections = {
             lualine_a = {
+                {
+                    "fileformat",
+                    symbols = M.platform_icons,
+                },
                 { "mode" },
             },
             lualine_b = {
@@ -54,7 +63,18 @@ function M.load()
                 "diagnostics",
             },
             lualine_c = {
-                "filename",
+                {
+                    "filename",
+                    file_status = true,
+                    path = 1,
+                    shorting_target = 40,
+                    symbols = {
+                        modified = "[+]", -- Text to show when the file is modified.
+                        readonly = "[-]", -- Text to show when the file is non-modifiable or readonly.
+                        unnamed = "[No Name]", -- Text to show for unnamed buffers.
+                        newfile = "[New]", -- Text to show for new created file before first writting
+                    },
+                },
             },
             lualine_x = {
                 "encoding",
@@ -74,7 +94,6 @@ function M.load()
         },
     })
 end
-
 function M.after() end
 
 return M

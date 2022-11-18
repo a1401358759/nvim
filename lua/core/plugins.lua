@@ -3,6 +3,7 @@ local aux_packer = require("utils.aux.packer")
 local plugins = {}
 
 plugins.basic = {
+    { "goolord/alpha-nvim" }, -- start
     { "wbthomason/packer.nvim" },
     { "rcarriga/nvim-notify" },
     { "tpope/vim-repeat" },
@@ -14,6 +15,7 @@ plugins.basic = {
 
 plugins.theme = {
     { "askfiy/starlight" },
+    { "sainnhe/gruvbox-material" },
 }
 
 plugins.lsp = {
@@ -23,6 +25,7 @@ plugins.lsp = {
     { "j-hui/fidget.nvim", after = { "nvim-lspconfig" } },
     { "kosayoda/nvim-lightbulb", after = { "nvim-lspconfig" } },
     { "jose-elias-alvarez/null-ls.nvim", after = { "nvim-lspconfig" } },
+    { "kkharji/lspsaga.nvim" },
 }
 
 plugins.complete = {
@@ -84,7 +87,7 @@ plugins.find = {
 }
 
 plugins.tools = {
-    { "uga-rosa/translate.nvim" },
+    { "voldikss/vim-translator" },
     { "olimorris/persisted.nvim" },
     { "norcalli/nvim-colorizer.lua" },
     { "askfiy/nvim-picgo", module = "nvim-picgo" },
@@ -92,6 +95,8 @@ plugins.tools = {
     { "lewis6991/gitsigns.nvim", event = { "BufRead", "BufNewFile" } },
     { "dstein64/vim-startuptime", cmd = { "StartupTime" } },
     { "folke/which-key.nvim", event = { "BufRead", "BufNewFile" } },
+    { "michaelb/sniprun", run = "bash ./install.sh" },
+    { "folke/trouble.nvim" },
 }
 
 plugins.views = {

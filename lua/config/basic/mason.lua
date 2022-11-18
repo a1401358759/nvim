@@ -24,6 +24,7 @@ M.installer_resources = {
         "bash-language-server",
         "typescript-language-server",
         "tailwindcss-language-server",
+        "python-lsp-server",
     },
     dap = {
         "delve",

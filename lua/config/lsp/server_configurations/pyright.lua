@@ -68,7 +68,7 @@ return {
                 autoSearchPaths = true,
                 useLibraryCodeForTypes = true,
                 autoImportCompletions = true,
-                diagnosticMode = "workspace",
+                diagnosticMode = "openFilesOnly",
                 -- https://github.com/microsoft/pyright/blob/main/docs/configuration.md#type-check-diagnostics-settings
                 diagnosticSeverityOverrides = {
                     strictListInference = true,
@@ -84,9 +84,13 @@ return {
                     reportUnusedExpression = "warning",
                     reportConstantRedefinition = "error",
                     reportIncompatibleMethodOverride = "error",
-                    reportMissingImports = "error",
                     reportUndefinedVariable = "error",
                     reportAssertAlwaysTrue = "error",
+                    reportMissingTypeStubs = "none",
+                    reportIncompleteStub = "none",
+                    reportInvalidStubStatement = "none",
+                    reportMissingModuleSource = "none",
+                    reportMissingImports = "none",
                 },
             },
         },

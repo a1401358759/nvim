@@ -8,6 +8,7 @@
         "vim",
         "name"
     ],
+<<<<<<< HEAD
     "Lua.workspace.library": [
         "/home/askfiy/.config/nvim",
         "/etc/xdg/nvim",
@@ -43,4 +44,7 @@
         "/usr/share/vim/vimfiles",
         "${3rd}/luassert/library"
     ]
+=======
+    "Lua.workspace.checkThirdParty": false
+>>>>>>> 2d28394 (增加新插件，修改配置)
 }

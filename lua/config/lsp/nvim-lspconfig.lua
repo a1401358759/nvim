@@ -45,20 +45,20 @@ function M.after() end
 
 function M.register_key()
     api.map.bulk_register({
-        {
-            mode = { "n" },
-            lhs = "<leader>ca",
-            rhs = vim.lsp.buf.code_action,
-            options = { silent = true },
-            description = "Show code action",
-        },
-        {
-            mode = { "n" },
-            lhs = "<leader>cn",
-            rhs = vim.lsp.buf.rename,
-            options = { silent = true },
-            description = "Variable renaming",
-        },
+        -- {
+        --     mode = { "n" },
+        --     lhs = "<leader>ca",
+        --     rhs = vim.lsp.buf.code_action,
+        --     options = { silent = true },
+        --     description = "Show code action",
+        -- },
+        -- {
+        --     mode = { "n" },
+        --     lhs = "<leader>cn",
+        --     rhs = vim.lsp.buf.rename,
+        --     options = { silent = true },
+        --     description = "Variable renaming",
+        -- },
         {
             mode = { "n" },
             lhs = "<leader>cf",
@@ -68,13 +68,13 @@ function M.register_key()
             options = { silent = true },
             description = "Format buffer",
         },
-        {
-            mode = { "n" },
-            lhs = "gh",
-            rhs = vim.lsp.buf.hover,
-            options = { silent = true },
-            description = "Show help information",
-        },
+        -- {
+        --     mode = { "n" },
+        --     lhs = "gh",
+        --     rhs = vim.lsp.buf.hover,
+        --     options = { silent = true },
+        --     description = "Show help information",
+        -- },
         {
             mode = { "n" },
             lhs = "gr",

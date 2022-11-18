@@ -5,7 +5,7 @@ local mapping = {}
 api.map.bulk_register({
     {
         mode = { "n" },
-        lhs = "<leader><esc>",
+        lhs = "<leader>q",
         rhs = ":qa!<cr>",
         options = { silent = true },
         description = "Escape Neovim",
@@ -175,6 +175,13 @@ api.map.bulk_register({
         rhs = "<right>",
         options = {},
         description = "Move cursor right in insert mode",
+    },
+    {
+        mode = { "n" },
+        lhs = "<leader>mp",
+        rhs = ":MarkdownPreview<CR>",
+        options = {},
+        description = "Markdown preview",
     },
 })
 
