@@ -19,18 +19,11 @@ local function get_venv()
     return string.format("(version: '%s')", M.pyversion)
 end
 
-local function diff_source()
-    local gitsigns = vim.b.gitsigns_status_dict
-    if gitsigns then
-        return {
-            added = gitsigns.added,
-            modified = gitsigns.changed,
-            removed = gitsigns.removed,
-        }
-    end
-end
-
 function M.before() end
+
+local hide_in_width = function()
+    return vim.fn.winwidth(0) > 80
+end
 
 function M.load()
     M.lualine.setup({
@@ -57,8 +50,26 @@ function M.load()
             },
             lualine_b = {
                 "branch",
-                { "diff", source = diff_source },
-                "diagnostics",
+                {
+                    "diff",
+                    colored = true,
+                    symbols = { added = "  ", modified = " ", removed = " " },
+                    diff_color = {
+                        added = { fg = "#98be65" },
+                        modified = { fg = "#ecbe7b" },
+                        removed = { fg = "#ec5f67" },
+                    },
+                    cond = hide_in_width,
+                },
+                {
+                    "diagnostics",
+                    sources = { "nvim_diagnostic" },
+                    sections = { "error", "warn", "hint" },
+                    symbols = { error = " ", warn = " ", hint = " " },
+                    colored = false,
+                    update_in_insert = false,
+                    always_visible = true,
+                },
             },
             lualine_c = {
                 {
