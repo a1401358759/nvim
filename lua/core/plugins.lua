@@ -14,8 +14,8 @@ plugins.basic = {
 }
 
 plugins.theme = {
-    { "askfiy/starlight" },
     { "sainnhe/gruvbox-material" },
+    { "askfiy/starlight" },
 }
 
 plugins.lsp = {
