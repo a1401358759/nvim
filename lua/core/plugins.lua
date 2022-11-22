@@ -14,13 +14,14 @@ plugins.basic = {
 }
 
 plugins.theme = {
-    { "sainnhe/gruvbox-material" },
-    { "askfiy/starlight" },
+    { "sainnhe/gruvbox-material", commit = "3711f1f6b7b2b32a668753b0bf8f14685161a037" },
+    -- { "ellisonleao/gruvbox.nvim", requires = { "rktjmp/lush.nvim" } },
+    -- { "askfiy/starlight" },
 }
 
 plugins.lsp = {
     { "williamboman/mason-lspconfig.nvim", after = { "mason.nvim" } },
-    { "SmiteshP/nvim-navic", after = { "mason-lspconfig.nvim" } },
+    { "SmiteshP/nvim-navic", after = { "mason-lspconfig.nvim" } }, -- A simple statusline/winbar component that uses LSP to show your current code context
     { "neovim/nvim-lspconfig", after = { "nvim-navic", "neodev.nvim" } },
     { "j-hui/fidget.nvim", after = { "nvim-lspconfig" } },
     { "kosayoda/nvim-lightbulb", after = { "nvim-lspconfig" } },

@@ -7,10 +7,10 @@ icons.platform = {
 }
 
 icons.diagnostic = {
-    Error = "" ,
+    Error = "",
     Warn = "",
-    Info = "",
-    Hint = "ﳁ",
+    Info = "",
+    Hint = "",
 }
 
 icons.tag_level = {

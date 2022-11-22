@@ -31,8 +31,12 @@ function M.load()
         },
         view = {
             side = "left",
-            width = 30,
+            adaptive_size = true,
+            centralize_selection = false,
             hide_root_folder = false,
+            preserve_window_proportions = false,
+            number = false,
+            relativenumber = false,
             signcolumn = "yes",
             mappings = {
                 list = {
@@ -70,7 +74,7 @@ function M.load()
         },
         filters = {
             dotfiles = false,
-            custom = { "node_modules", "\\.cache", "__pycache__" },
+            custom = { "node_modules", "\\.cache", "__pycache__", "^.git$", "^.github$" },
             exclude = {},
         },
         renderer = {
@@ -88,11 +92,11 @@ function M.load()
                     default = "",
                     symlink = "",
                     git = {
-                        unstaged = "",
-                        staged = "",
+                        unstaged = "✗",
+                        staged = "✓",
                         unmerged = "",
                         renamed = "凜",
-                        untracked = "",
+                        untracked = "★",
                         deleted = "",
                         ignored = "",
                     },
