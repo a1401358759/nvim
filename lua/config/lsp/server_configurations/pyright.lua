@@ -80,7 +80,7 @@ return {
                     reportUnusedVariable = "warning",
                     reportUnusedCoroutine = "warning",
                     reportDuplicateImport = "warning",
-                    reportPrivateUsage = "warning",
+                    reportPrivateUsage = "none",
                     reportUnusedExpression = "warning",
                     reportConstantRedefinition = "error",
                     reportIncompatibleMethodOverride = "error",
