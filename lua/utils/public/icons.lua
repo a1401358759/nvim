@@ -10,7 +10,8 @@ icons.diagnostic = {
     Error = "",
     Warn = "",
     Info = "",
-    Hint = "",
+    Hint = "",
+    -- Hint = "",
 }
 
 icons.tag_level = {

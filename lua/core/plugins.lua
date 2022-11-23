@@ -85,6 +85,7 @@ plugins.find = {
     { "phaazon/hop.nvim", cmd = { "HopWord", "HopLine", "HopChar1", "HopChar1CurrentLine" } },
     { "folke/todo-comments.nvim", event = { "BufRead", "BufNewFile" } },
     { "nvim-telescope/telescope-fzf-native.nvim", run = "make", module = { "telescope._extensions.fzf" } },
+    { "kevinhwang91/rnvimr", after = { "nvim-web-devicons" } },
 }
 
 plugins.tools = {

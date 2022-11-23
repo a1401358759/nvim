@@ -1,5 +1,8 @@
 -- https://github.com/folke/trouble.nvim
 
+local public = require("utils.public")
+local icons = public.get_icons("diagnostic", true)
+
 local M = {}
 
 function M.before()
@@ -53,10 +56,10 @@ function M.load()
             auto_jump = { "lsp_definitions" }, -- for the given modes, automatically jump if there is only a single result
             signs = {
                 -- icons / text used for a diagnostic
-                error = "",
-                warning = "",
-                hint = "",
-                information = "",
+                error = icons.Error,
+                warning = icons.Warn,
+                hint = icons.Hint,
+                information = icons.Info,
                 other = "﫠",
             },
             use_diagnostic_signs = false, -- enabling this will use the signs defined in your lsp client
