@@ -67,6 +67,7 @@ function M.load()
             { name = "buffer" },
             { name = "cmp_tabnine" },
             { name = "vim-dadbod-completion" },
+            { name = "nvim_lsp_signature_help" },
         }),
         -- define buttons
         -- • i: valid in insert mode

@@ -28,10 +28,19 @@ end
 function M.load()
     M.lualine.setup({
         options = {
-            theme = "auto",
+            -- theme = "auto",
+            theme = "gruvbox",
             icons_enabled = true,
-            component_separators = { left = "", right = "" },
-            section_separators = { left = "", right = "" },
+            -- component_separators = { left = "", right = "" },
+            -- section_separators = { left = "", right = "" },
+            component_separators = {
+                left = "|",
+                right = "|",
+            },
+            section_separators = {
+                left = " ",
+                right = "",
+            },
             disabled_filetypes = {},
             globalstatus = true,
             refresh = {
