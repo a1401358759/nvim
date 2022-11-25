@@ -18,12 +18,12 @@ function M.load()
     -- background, but you can use a grey background by setting this option to `'grey'`.
     vim.g.gruvbox_material_sign_column_background = "none" -- none, grey
     vim.g.gruvbox_material_spell_foreground = "colored" -- 'none', 'colored'
-    vim.g.gruvbox_material_ui_contrast = "low" -- 'low', 'high'
+    vim.g.gruvbox_material_ui_contrast = "high" -- 'low', 'high'
     vim.g.gruvbox_material_diagnostic_text_highlight = 0 -- 0, 1
     vim.g.gruvbox_material_diagnostic_line_highlight = 0 -- 0, 1
     vim.g.gruvbox_material_diagnostic_virtual_text = "colored" -- 'grey', 'colored'
     vim.g.gruvbox_material_current_word = "grey background" -- 'grey background', 'bold', 'underline', 'italic'
-    vim.g.gruvbox_material_disable_terminal_colors = 1 -- 0, 1
+    vim.g.gruvbox_material_disable_terminal_colors = 0 -- 0, 1
     vim.g.gruvbox_material_statusline_style = "original" -- 'default', 'mix', 'original'
     vim.g.gruvbox_material_lightline_disable_bold = 0 -- 0, 1
     vim.g.gruvbox_material_better_performance = 0 -- 0, 1
