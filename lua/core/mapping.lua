@@ -27,7 +27,7 @@ api.map.bulk_register({
     {
         mode = { "n" },
         lhs = "<esc>",
-        rhs = ":noh<cr>",
+        rhs = ":nohlsearch<cr>",
         options = { silent = true },
         description = "Clear search highlight",
     },
@@ -182,6 +182,13 @@ api.map.bulk_register({
         rhs = ":MarkdownPreview<CR>",
         options = {},
         description = "Markdown preview",
+    },
+    {
+        mode = { "n" },
+        lhs = "<leader>cc",
+        rhs = ":Telescope colorscheme<CR>",
+        options = {},
+        description = "Switch colorscheme",
     },
 })
 
