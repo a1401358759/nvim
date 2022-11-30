@@ -22,6 +22,16 @@ function M.load()
             M.null_ls.builtins.formatting.shfmt,
             M.null_ls.builtins.formatting.prettier,
             M.null_ls.builtins.formatting.autopep8,
+            M.null_ls.builtins.formatting.isort.with({
+                extra_args = {
+                    "--line-length=120",
+                },
+            }),
+            M.null_ls.builtins.formatting.black.with({
+                extra_args = {
+                    "--line-length=120",
+                },
+            }),
             M.null_ls.builtins.formatting.sql_formatter,
             M.null_ls.builtins.formatting.stylua.with({
                 extra_args = {
