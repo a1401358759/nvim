@@ -21,7 +21,6 @@ function M.load()
             M.null_ls.builtins.formatting.gofmt,
             M.null_ls.builtins.formatting.shfmt,
             M.null_ls.builtins.formatting.prettier,
-            M.null_ls.builtins.formatting.autopep8,
             M.null_ls.builtins.formatting.isort.with({
                 extra_args = {
                     "--line-length=120",

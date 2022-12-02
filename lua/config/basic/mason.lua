@@ -32,10 +32,13 @@ M.installer_resources = {
     },
     linter = {
         "pylint",
+        "mypy",
+        "flake8",
     },
     formatter = {
         "shfmt",
-        "autopep8",
+        "isort",
+        "black",
         "prettier",
         "sql-formatter",
         "stylua",
@@ -72,7 +75,11 @@ function M.after()
                     resource:install()
                     table.insert(installed_resources, resource_name)
                 else
-                    vim.notify(string.format("Invalid resource name %s", resource_name), "ERROR", { title = "Mason" })
+                    vim.notify(
+                        string.format("Invalid resource name %s", resource_name),
+                        vim.log.levels.ERROR,
+                        { title = "Mason" }
+                    )
                 end
             end
         end
@@ -81,7 +88,7 @@ function M.after()
     if not vim.tbl_isempty(installed_resources) then
         vim.notify(
             string.format("Install resource: \n - %s", table.concat(installed_resources, "\n - ")),
-            "INFO",
+            vim.log.levels.INFO,
             { title = "Mason" }
         )
     end
