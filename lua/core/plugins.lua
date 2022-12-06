@@ -15,7 +15,7 @@ plugins.basic = {
 
 plugins.theme = {
     { "sainnhe/gruvbox-material", commit = "3711f1f6b7b2b32a668753b0bf8f14685161a037" },
-    { "olimorris/onedarkpro.nvim"},
+    { "olimorris/onedarkpro.nvim" },
     -- { "askfiy/starlight" },
 }
 
@@ -111,6 +111,17 @@ plugins.views = {
     { "kristijanhusak/vim-dadbod-ui", cmd = { "DBUIToggle" } },
     { "dstein64/nvim-scrollview", event = { "BufRead", "BufNewFile" } },
     { "akinsho/toggleterm.nvim", module = "toggleterm" },
+    {
+        "folke/noice.nvim",
+        requires = {
+            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+            "MunifTanjim/nui.nvim",
+            -- OPTIONAL:
+            --   `nvim-notify` is only needed, if you want to use the notification view.
+            --   If not available, we use `mini` as the fallback
+            "rcarriga/nvim-notify",
+        },
+    },
 }
 
 aux_packer.entry(plugins)

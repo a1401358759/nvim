@@ -26,7 +26,7 @@ function M.load()
 
     M.nvim_treesitter_configs.setup({
         ensure_installed = "all",
-        ignore_install = { "phpdoc" },
+        ignore_install = { "phpdoc", "julia", "hcl" },
         highlight = {
             enable = true,
             additional_vim_regex_highlighting = false,
