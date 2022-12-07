@@ -13,7 +13,7 @@ function M.load()
     M.noice.setup({
         cmdline = {
             enabled = true, -- enables the Noice cmdline UI
-            view = "cmdline", -- `cmdline_popup`, view for rendering the cmdline. Change to `cmdline` to get a classic cmdline at the bottom
+            view = "cmdline_popup", -- `cmdline_popup`, view for rendering the cmdline. Change to `cmdline` to get a classic cmdline at the bottom
             opts = { -- global options for the cmdline. See section on views
                 border = { text = { top = "", top_align = "left" } },
             },

@@ -77,90 +77,70 @@ function M.register_key()
         {
             mode = { "n" },
             lhs = "<leader>ff",
-            rhs = function()
-                require("telescope.builtin").find_files()
-            end,
+            rhs = ":Telescope find_files<CR>",
             options = { silent = true },
             description = "Find files in the current workspace",
         },
         {
             mode = { "n" },
             lhs = "<leader>fg",
-            rhs = function()
-                require("telescope.builtin").live_grep()
-            end,
+            rhs = ":Telescope live_grep<CR>",
             options = { silent = true },
             description = "Find string in the current workspace",
         },
         {
             mode = { "n" },
             lhs = "<leader>fo",
-            rhs = function()
-                require("telescope.builtin").oldfiles()
-            end,
+            rhs = ":Telescope oldfiles<CR>",
             options = { silent = true },
             description = "Find telescope history",
         },
         {
             mode = { "n" },
             lhs = "<leader>fh",
-            rhs = function()
-                require("telescope.builtin").resume()
-            end,
+            rhs = ":Telescope resume<CR>",
             options = { silent = true },
             description = "Find last lookup",
         },
         {
             mode = { "n" },
             lhs = "<leader>ft",
-            rhs = function()
-                require("telescope.builtin").help_tags()
-            end,
+            rhs = ":Telescope help_tags<CR>",
             options = { silent = true },
             description = "Find all help document tags",
         },
         {
             mode = { "n" },
             lhs = "<leader>fm",
-            rhs = function()
-                require("telescope.builtin").marks()
-            end,
+            rhs = ":Telescope marks<CR>",
             options = { silent = true },
             description = "Find marks in the current workspace",
         },
         {
             mode = { "n" },
             lhs = "<leader>fi",
-            rhs = function()
-                require("telescope.builtin").highlights()
-            end,
+            rhs = ":Telescope highlights<CR>",
             options = { silent = true },
             description = "Find all neovim highlights",
         },
         {
             mode = { "n" },
             lhs = "<leader>fb",
-            rhs = function()
-                require("telescope.builtin").buffers()
-            end,
+            rhs = ":Telescope buffers<CR>",
             options = { silent = true },
             description = "Find all buffers",
         },
         {
             mode = { "n" },
             lhs = "<leader>f/",
-            rhs = function()
-                require("telescope.builtin").search_history()
-            end,
+            rhs = ":Telescope search_history<CR>",
             options = { silent = true },
             description = "Find all search history",
         },
         {
             mode = { "n" },
             lhs = "<leader>f:",
-            rhs = function()
-                require("telescope.builtin").command_history()
-            end,
+            rhs = ":Telescope command_history<CR>",
             options = { silent = true },
             description = "Find all command history",
         },
