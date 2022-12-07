@@ -28,6 +28,7 @@ plugins.lsp = {
     { "kosayoda/nvim-lightbulb", after = { "nvim-lspconfig" } },
     { "jose-elias-alvarez/null-ls.nvim", after = { "nvim-lspconfig" } },
     { "kkharji/lspsaga.nvim" },
+    { "utilyre/barbecue.nvim", after = { "nvim-lspconfig", "nvim-navic", "nvim-web-devicons" } },
 }
 
 plugins.complete = {
