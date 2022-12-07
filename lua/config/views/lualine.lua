@@ -9,18 +9,6 @@ local M = {
     },
 }
 
-local function diff_source()
-    ---@diagnostic disable-next-line: undefined-field
-    local gitsigns = vim.b.gitsigns_status_dict
-    if gitsigns then
-        return {
-            added = gitsigns.added,
-            modified = gitsigns.changed,
-            removed = gitsigns.removed,
-        }
-    end
-end
-
 function M.before() end
 
 local hide_in_width = function()
@@ -65,7 +53,7 @@ function M.load()
                     colored = true,
                     symbols = { added = "  ", modified = " ", removed = " " },
                     diff_color = {
-                        added = { fg = "#98be65" },
+                        added = { fg = "#98971a" },
                         modified = { fg = "#ecbe7b" },
                         removed = { fg = "#ec5f67" },
                     },
@@ -76,7 +64,7 @@ function M.load()
                     sources = { "nvim_diagnostic" },
                     sections = { "error", "warn", "hint" },
                     symbols = { error = " ", warn = " ", hint = " " },
-                    colored = false,
+                    colored = true,
                     update_in_insert = false,
                     always_visible = true,
                 },

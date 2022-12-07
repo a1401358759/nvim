@@ -6,10 +6,11 @@ local M = {
     },
 }
 
-function M.before() end
+function M.before()
+    vim.o.lazyredraw = false -- noice.nvim requires to disable this option
+end
 
 function M.load()
-    vim.o.lazyredraw = false -- noice.nvim requires to disable this option
     M.noice.setup({
         cmdline = {
             enabled = true, -- enables the Noice cmdline UI
