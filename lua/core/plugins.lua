@@ -28,7 +28,15 @@ plugins.lsp = {
     { "kosayoda/nvim-lightbulb", after = { "nvim-lspconfig" } },
     { "jose-elias-alvarez/null-ls.nvim", after = { "nvim-lspconfig" } },
     { "kkharji/lspsaga.nvim" },
-    { "utilyre/barbecue.nvim", after = { "nvim-lspconfig", "nvim-navic", "nvim-web-devicons" } },
+    {
+        "utilyre/barbecue.nvim",
+        requires = {
+            "neovim/nvim-lspconfig",
+            "smiteshp/nvim-navic",
+            "kyazdani42/nvim-web-devicons", -- optional
+        },
+        after = "nvim-web-devicons", -- NOTICE: keep this if you're using NvChad
+    }
 }
 
 plugins.complete = {
