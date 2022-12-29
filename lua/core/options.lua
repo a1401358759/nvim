@@ -2,7 +2,7 @@ local api = require("utils.api")
 
 local options = {}
 
-options.transparent = true
+options.transparent = false
 options.float_border = true
 options.show_winbar = true
 

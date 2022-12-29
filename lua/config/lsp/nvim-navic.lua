@@ -1,4 +1,3 @@
----@diagnostic disable: assign-type-mismatch
 -- https://github.com/SmiteshP/nvim-navic
 
 local options = require("core.options")

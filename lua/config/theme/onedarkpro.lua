@@ -1,5 +1,7 @@
 -- https://github.com/olimorris/onedarkpro.nvim
 
+local options = require("core.options")
+
 local M = {
     requires = {
         "onedarkpro",
@@ -51,7 +53,7 @@ function M.load()
             underline = false, -- Use underline styles?
             undercurl = true, -- Use undercurl styles?
             cursorline = false, -- Use cursorline highlighting?
-            transparency = false, -- Use a transparent background?
+            transparency = options.transparent, -- Use a transparent background?
             terminal_colors = true, -- Use the theme's colors for Neovim's :terminal?
             window_unfocused_color = false, -- When the window is out of focus, change the normal background?
         },

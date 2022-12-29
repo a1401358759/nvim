@@ -15,7 +15,6 @@ plugins.basic = {
 
 plugins.theme = {
     { "sainnhe/gruvbox-material", commit = "3711f1f6b7b2b32a668753b0bf8f14685161a037" },
-    { "olimorris/onedarkpro.nvim" },
     -- { "askfiy/starlight" },
 }
 
@@ -28,15 +27,6 @@ plugins.lsp = {
     { "kosayoda/nvim-lightbulb", after = { "nvim-lspconfig" } },
     { "jose-elias-alvarez/null-ls.nvim", after = { "nvim-lspconfig" } },
     { "kkharji/lspsaga.nvim" },
-    {
-        "utilyre/barbecue.nvim",
-        requires = {
-            "neovim/nvim-lspconfig",
-            "smiteshp/nvim-navic",
-            "kyazdani42/nvim-web-devicons", -- optional
-        },
-        after = "nvim-web-devicons", -- NOTICE: keep this if you're using NvChad
-    }
 }
 
 plugins.complete = {

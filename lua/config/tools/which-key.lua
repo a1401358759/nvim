@@ -29,7 +29,7 @@ function M.after()
         d = { name = "Debug" },
         f = { name = "Find" },
         g = { name = "Git" },
-        r = { name = "Replace", w = "Replace Word To ..." },
+        r = { name = "Replace | Ranger", w = "Replace Word To ..." },
         s = { name = "Session" },
         u = { name = "Upload" },
         t = {
