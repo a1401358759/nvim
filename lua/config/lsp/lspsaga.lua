@@ -59,13 +59,13 @@ function M.register_key()
             options = { silent = true },
             description = "Show code action",
         },
-        {
-            mode = { "n" },
-            lhs = "<leader>cn",
-            rhs = ":Lspsaga rename<CR>",
-            options = { silent = true },
-            description = "Variable renaming",
-        },
+        -- {
+        --     mode = { "n" },
+        --     lhs = "<leader>cn",
+        --     rhs = ":Lspsaga rename<CR>",
+        --     options = { silent = true },
+        --     description = "Variable renaming",
+        -- },
         {
             mode = { "n" },
             lhs = "gh",

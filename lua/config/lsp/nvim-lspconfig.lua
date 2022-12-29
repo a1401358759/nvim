@@ -54,13 +54,13 @@ function M.register_key()
         --     options = { silent = true },
         --     description = "Show code action",
         -- },
-        -- {
-        --     mode = { "n" },
-        --     lhs = "<leader>cn",
-        --     rhs = vim.lsp.buf.rename,
-        --     options = { silent = true },
-        --     description = "Variable renaming",
-        -- },
+        {
+            mode = { "n" },
+            lhs = "<leader>cn",
+            rhs = vim.lsp.buf.rename,
+            options = { silent = true },
+            description = "Variable renaming",
+        },
         {
             mode = { "n" },
             lhs = "<leader>cf",

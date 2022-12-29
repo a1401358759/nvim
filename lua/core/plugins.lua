@@ -40,7 +40,7 @@ plugins.complete = {
     { "hrsh7th/cmp-cmdline", after = { "nvim-cmp" } },
     { "kristijanhusak/vim-dadbod-completion", after = { "nvim-cmp" } },
     { "tzachar/cmp-tabnine", run = "./install.sh", after = { "nvim-cmp" } },
-    { "github/copilot.vim", ft = { "dap-repl" }, event = { "InsertEnter" } },
+    -- { "github/copilot.vim", ft = { "dap-repl" }, event = { "InsertEnter" } },
 }
 
 plugins.dap = {
