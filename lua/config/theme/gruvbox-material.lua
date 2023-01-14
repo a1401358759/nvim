@@ -7,7 +7,7 @@ local M = {}
 function M.before() end
 
 function M.load()
-    vim.g.gruvbox_material_foreground = "original" -- "material"、"mix"、"original"
+    vim.g.gruvbox_material_foreground = "material" -- "material"、"mix"、"original"
     vim.g.gruvbox_material_background = "soft" -- Available values: 'hard', 'medium'(default), 'soft'
     vim.g.gruvbox_material_disable_italic_comment = 1 -- By default, italic is enabled in `Comment`. To disable italic in `Comment`, set this option to 1
     vim.g.gruvbox_material_enable_bold = 0 -- To enable bold in function name just like the original gruvbox, set this option to 1
@@ -26,9 +26,9 @@ function M.load()
     vim.g.gruvbox_material_diagnostic_virtual_text = "colored" -- 'grey', 'colored'
     vim.g.gruvbox_material_current_word = "grey background" -- 'grey background', 'bold', 'underline', 'italic'
     vim.g.gruvbox_material_disable_terminal_colors = 0 -- 0, 1
-    vim.g.gruvbox_material_statusline_style = "original" -- 'default', 'mix', 'original'
+    vim.g.gruvbox_material_statusline_style = "material" -- 'default', 'mix', 'original'
     vim.g.gruvbox_material_lightline_disable_bold = 0 -- 0, 1
-    vim.g.gruvbox_material_better_performance = 0 -- 0, 1
+    vim.g.gruvbox_material_better_performance = 1 -- 0, 1
     -- vim.g.gruvbox_material_colors_override = {'bg0': ['#1d2021', '234'], 'bg2': ['#282828', '235']}
 end
 

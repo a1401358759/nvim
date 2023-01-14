@@ -13,7 +13,7 @@ local M = {
 M.installer_resources = {
     lsp = {
         "gopls",
-        "pyright",
+        -- "pyright",
         "css-lsp",
         "json-lsp",
         "html-lsp",
@@ -31,8 +31,8 @@ M.installer_resources = {
         "debugpy",
     },
     linter = {
-        "pylint",
-        "mypy",
+        -- "pylint",
+        -- "mypy",
         "flake8",
     },
     formatter = {
