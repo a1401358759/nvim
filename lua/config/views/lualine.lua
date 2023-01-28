@@ -25,7 +25,7 @@ function M.load()
             -- component_separators = { left = "|", right = "|" },
             -- section_separators = { left = " ", right = "" },
             disabled_filetypes = {},
-            globalstatus = true,
+            globalstatus = false,
             refresh = {
                 statusline = 100,
                 tabline = 100,
@@ -87,6 +87,10 @@ function M.load()
             },
             lualine_z = { "location" },
         },
+        tabline = {},
+        winbar = {},
+        inactive_winbar = {},
+        extensions = { "nvim-tree", "aerial", "toggleterm", "nvim-dap-ui" },
     })
 end
 function M.after() end

@@ -2,9 +2,10 @@ local setting = {}
 
 setting.g = {
     mapleader = " ",
+    loaded_netrw = 1,
+    loaded_netrwPlugin = 1,
+    navic_silence = true,
 }
-
-vim.g.navic_silence = true
 
 setting.opt = {
     ruler = false,
