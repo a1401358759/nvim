@@ -121,6 +121,16 @@ plugins.views = {
             "rcarriga/nvim-notify",
         },
     },
+    {
+        "utilyre/barbecue.nvim",
+        tag = "*",
+        requires = {
+            "neovim/nvim-lspconfig",
+            "SmiteshP/nvim-navic",
+            "nvim-tree/nvim-web-devicons", -- optional dependency
+        },
+        after = "nvim-web-devicons", -- keep this if you're using NvChad
+    },
 }
 
 aid_packer.entry(plugins)
