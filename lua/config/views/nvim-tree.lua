@@ -16,12 +16,25 @@ end
 
 function M.load()
     M.nvim_tree.setup({
+        auto_reload_on_write = true,
         disable_netrw = false,
+        hijack_unnamed_buffer_when_opening = false,
+        ignore_buffer_on_setup = false,
+        open_on_setup = false,
+        open_on_setup_file = false,
+        sort_by = "name",
+        root_dirs = {},
+        prefer_startup_root = false,
+        sync_root_with_cwd = false,
+        reload_on_bufenter = false,
+        respect_buf_cwd = false,
+        on_attach = "disable",
+        remove_keymaps = false,
+        select_prompts = false,
         hijack_netrw = false,
-        hijack_cursor = true,
+        hijack_cursor = false,
         update_cwd = true,
         ignore_ft_on_setup = { "dashboard" },
-        reload_on_bufenter = true,
         notify = {
             threshold = vim.log.levels.WARN,
         },
@@ -31,7 +44,8 @@ function M.load()
         },
         view = {
             side = "left",
-            adaptive_size = true,
+            -- adaptive_size = true,
+            width = 30,
             centralize_selection = false,
             hide_root_folder = false,
             preserve_window_proportions = false,
@@ -41,6 +55,18 @@ function M.load()
             mappings = {
                 list = {
                     { key = "?", action = "toggle_help" },
+                },
+            },
+            float = {
+                enable = false,
+                quit_on_focus_loss = true,
+                open_win_config = {
+                    relative = "editor",
+                    border = "rounded",
+                    width = 30,
+                    height = 30,
+                    row = 1,
+                    col = 1,
                 },
             },
         },
@@ -81,6 +107,18 @@ function M.load()
             add_trailing = true,
             highlight_git = true,
             highlight_opened_files = "none",
+            indent_width = 2,
+            indent_markers = {
+                enable = false,
+                inline_arrows = true,
+                icons = {
+                    corner = "└",
+                    edge = "│",
+                    item = "│",
+                    bottom = "─",
+                    none = " ",
+                },
+            },
             icons = {
                 show = {
                     file = true,
