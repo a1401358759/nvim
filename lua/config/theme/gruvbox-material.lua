@@ -8,7 +8,7 @@ function M.before() end
 
 function M.load()
     vim.g.gruvbox_material_foreground = "original" -- "material"、"mix"、"original"
-    vim.g.gruvbox_material_background = "soft" -- Available values: 'hard', 'medium'(default), 'soft'
+    vim.g.gruvbox_material_background = "medium" -- Available values: 'hard', 'medium'(default), 'soft'
     vim.g.gruvbox_material_disable_italic_comment = 1 -- By default, italic is enabled in `Comment`. To disable italic in `Comment`, set this option to 1
     vim.g.gruvbox_material_enable_bold = 0 -- To enable bold in function name just like the original gruvbox, set this option to 1
     vim.g.gruvbox_material_enable_italic = 0 -- To enable italic in this color scheme, set this option to 1

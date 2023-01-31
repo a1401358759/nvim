@@ -60,7 +60,6 @@ function M.load()
             "markdown_inline",
             "ninja",
             "python",
-            "ruby",
             "rust",
             "scss",
             "sql",
