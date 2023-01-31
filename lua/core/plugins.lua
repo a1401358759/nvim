@@ -10,7 +10,7 @@ plugins.basic = {
     { "nvim-lua/plenary.nvim", module = "plenary" },
     { "williamboman/mason.nvim", after = { "nvim-notify" } },
     { "nvim-treesitter/nvim-treesitter", module = "nvim-treesitter", run = { ":TSUpdate" } },
-    { "kyazdani42/nvim-web-devicons", module = "nvim-web-devicons" },
+    { "nvim-tree/nvim-web-devicons", module = "nvim-web-devicons" },
 }
 
 plugins.theme = {
@@ -129,7 +129,7 @@ plugins.views = {
             "SmiteshP/nvim-navic",
             "nvim-tree/nvim-web-devicons", -- optional dependency
         },
-        after = "nvim-web-devicons", -- keep this if you're using NvChad
+        after = { "nvim-web-devicons", "nvim-navic" }, -- keep this if you're using NvChad
     },
 }
 
