@@ -31,7 +31,6 @@ function M.load()
             "bash",
             "blueprint",
             "c",
-            "c_sharp",
             "cmake",
             "comment",
             "cpp",
@@ -71,7 +70,7 @@ function M.load()
             "vue",
             "yaml",
         },
-        ignore_install = { "phpdoc", "julia", "hcl" },
+        ignore_install = { "phpdoc", "julia", "hcl", "c_sharp" },
         highlight = {
             enable = true,
             additional_vim_regex_highlighting = false,
