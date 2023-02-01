@@ -115,7 +115,7 @@ function aid_packer.entry(plugins)
         config = {
             display = {
                 open_fn = function()
-                    return require("packer.util").float({ border = options.float_border and "double" or "none" })
+                    return require("packer.util").float({ border = options.float_border and "single" or "none" })
                 end,
             },
         },

@@ -13,7 +13,7 @@ function M.load()
     vim.g.gruvbox_material_enable_bold = 0 -- To enable bold in function name just like the original gruvbox, set this option to 1
     vim.g.gruvbox_material_enable_italic = 0 -- To enable italic in this color scheme, set this option to 1
     vim.g.gruvbox_material_transparent_background = options.transparent -- To use transparent background, set this option to 1
-    vim.g.gruvbox_material_visual = "grey background" -- Available values: 'grey background', 'green background', 'blue background', 'red background', 'reverse'
+    vim.g.gruvbox_material_visual = "green background" -- Available values: 'grey background', 'green background', 'blue background', 'red background', 'reverse'
     vim.g.gruvbox_material_show_eob = 0 -- Available values: 1, 0
     vim.g.gruvbox_material_menu_selection_background = "grey" -- Available values: 'grey', 'red', 'orange', 'yellow', 'green', 'aqua', 'blue', 'purple'
     -- By default, the color of sign column background is the same as normal text
@@ -29,6 +29,7 @@ function M.load()
     vim.g.gruvbox_material_statusline_style = "original" -- 'default', 'mix', 'original'
     vim.g.gruvbox_material_lightline_disable_bold = 0 -- 0, 1
     vim.g.gruvbox_material_better_performance = 1 -- 0, 1
+    vim.g.gruvbox_material_dim_inactive_windows = 0  -- 0, 1
     -- vim.g.gruvbox_material_colors_override = {'bg0': ['#1d2021', '234'], 'bg2': ['#282828', '235']}
 end
 
