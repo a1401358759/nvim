@@ -19,9 +19,6 @@ function M.load()
         command = "VimLeavePre",
         autosave = true,
         branch_separator = "_",
-        after_save = function()
-            vim.cmd("nohlsearch")
-        end,
     })
 end
 

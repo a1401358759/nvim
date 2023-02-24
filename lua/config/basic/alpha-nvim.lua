@@ -52,7 +52,7 @@ function M.load()
 
     -- startify config
     startify.section.bottom_buttons.val = {
-        startify.button("s", "  Load Session", "<leader>sl"),
+        startify.button("s", "  Load Session", ":SessionLoad <CR>"),
         startify.button("q", "  Quit NVIM", ":qa<CR>"),
     }
 
