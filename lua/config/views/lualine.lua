@@ -84,8 +84,13 @@ function M.load()
             },
             lualine_y = {
                 "progress",
+                "location",
             },
-            lualine_z = { "location" },
+            lualine_z = {
+                function()
+                    return " " .. os.date("%R")
+                end,
+            },
         },
         tabline = {},
         winbar = {},
