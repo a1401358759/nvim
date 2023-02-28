@@ -24,9 +24,9 @@ function M.load()
     M.terms = require("toggleterm.terminal").Terminal
 
     M.toggleterm.setup({
-        start_in_insert = false,
-        shade_terminals = true,
-        shading_factor = 1,
+        start_in_insert = true,
+        shade_terminals = false,
+        shading_factor = -30,
         size = function(term)
             if term.direction == "horizontal" then
                 return vim.o.lines * 0.25
@@ -87,7 +87,7 @@ function M.create_terminal()
         hidden = true,
         direction = "float",
         float_opts = {
-            border = options.float_border and "single" or "none",
+            border = options.float_border and "curved" or "none",
         },
         on_open = function(term)
             M.open_callback()
