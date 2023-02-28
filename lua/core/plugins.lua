@@ -14,8 +14,8 @@ plugins.basic = {
 }
 
 plugins.theme = {
-    { "sainnhe/gruvbox-material", commit = "3711f1f6b7b2b32a668753b0bf8f14685161a037" },
-    -- { "askfiy/starlight" },
+    { "sainnhe/gruvbox-material", commit = "3711f1f6b7b2b32a668753b0bf8f14685161a037"},
+    { "askfiy/starlight", disable = true },
 }
 
 plugins.lsp = {

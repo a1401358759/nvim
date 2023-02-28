@@ -66,7 +66,7 @@ function M.create_terminal()
         count = 120,
         direction = "float",
         float_opts = {
-            border = options.float_border and "single" or "none",  -- 'single' | 'double' | 'shadow' | 'curved' |
+            border = options.float_border and "curved" or "none",  -- 'single' | 'double' | 'shadow' | 'curved' |
         },
         on_open = function(term)
             M.open_callback()

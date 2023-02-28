@@ -16,10 +16,10 @@ function M.load()
         transparent = options.transparent,
         style = {
             comments = { italic = true },
-            functions = { italic = true },
-            keywords = { italic = true },
-            strings = { italic = true },
-            variables = { italic = true },
+            functions = { italic = false },
+            keywords = { italic = false },
+            strings = { italic = false },
+            variables = { italic = false },
         },
         extend = {
             hop = true,
@@ -34,6 +34,7 @@ function M.load()
             lspconfig = true,
             telescope = true,
             bufferline = true,
+            lualine = true,
             nvim_navic = true,
             nvim_notify = true,
             vim_illuminate = true,

@@ -50,6 +50,7 @@ function M.load()
             WARN = icons.Warn,
             INFO = icons.Hint,
         },
+        background_colour = "",
     }
 
     if options.transparent then
